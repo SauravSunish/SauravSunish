@@ -1,79 +1,86 @@
 <p align="center">
-  <img src="./assets/systems-banner.png" alt="Abstract systems map connecting neural attention and transit routes" width="100%" />
+  <img src="https://raw.githubusercontent.com/SauravSunish/SauravSunish/main/assets/systems-banner.png?v=2" alt="Saurav Sunish portfolio banner" width="100%" />
 </p>
 
-<h1 align="center">SAURAV / BUILD NOTES</h1>
+<h1 align="center">Saurav Sunish</h1>
 
 <p align="center">
-  <code>web systems</code> · <code>applied ML</code> · <code>ideas I can explain end to end</code>
+  <strong>Project Portfolio</strong><br/>
+  Web systems · Applied machine learning · Explainable prototypes
 </p>
 
 ---
 
-I build academic and personal projects to understand how an idea moves from **logic → interface → working prototype**.
+I build academic and personal projects to understand how an idea moves from **logic → interface → working prototype**. I document what works, how it works, and where the limitations are.
 
-The two projects below are the best examples of how I currently think and build.
+## Featured Projects
 
-### 01 — ROUTE / LIGHT / CHOICE
+### 01. SmartBus — Bus Booking Prototype
 
-**[SmartBus →](https://github.com/SauravSunish/mini-project-sonajafy)**  
-A PHP/MySQL bus-booking prototype with seat inventory, booking flow, QR e-tickets, a route-progress view, and a sunlight-based seat recommendation experiment.
+**[View repository →](https://github.com/SauravSunish/mini-project-sonajafy)**
 
-#### How the sunlight recommendation works
+A PHP/MySQL application with seat inventory, booking flow, QR e-tickets, a route-progress screen, and an experimental sunlight-based seat recommendation.
 
-1. The source and destination are mapped to stored latitude/longitude coordinates.
-2. The client calculates an approximate route bearing between those points.
+`PHP` · `MySQL` · `JavaScript` · `Bootstrap` · `SunCalc`
+
+**Key idea:** recommend the side of a bus with lower sun exposure using the journey time, approximate route bearing, and solar position.
+
+<details>
+<summary><strong>How it works and what I can explain</strong></summary>
+
+<br/>
+
+1. Source and destination names map to stored latitude/longitude coordinates.
+2. JavaScript calculates an approximate bearing between those coordinates.
 3. SunCalc returns solar azimuth and altitude for the selected departure time.
-4. The relative angle between the route and sun is used to recommend the left or right side.
+4. The relative angle determines whether the left or right side is recommended.
 5. At night all seats remain available; near high noon, aisle seats are preferred.
 
-The tracking screen polls a PHP endpoint every eight seconds and renders progress between route stops. It is a prototype of near-real-time UI updates—not a production GPS platform.
+The route-progress screen polls a PHP endpoint every eight seconds. It demonstrates periodic UI updates; it is not a production GPS implementation.
 
-`PHP` `MySQL` `JavaScript` `Bootstrap` `SunCalc`
+I can walk through prepared statements, PHP-to-JavaScript JSON, booked-seat state, responsive seat layouts, QR generation, polling, and the recommendation logic.
 
-**What I can discuss:** prepared statements, server-to-client JSON, booked-seat state, responsive seat layouts, QR generation, polling, and the trade-offs in the sunlight heuristic.
+**Limitation:** the current heuristic uses a straight source-to-destination bearing and the journey start time. A production version would use actual route geometry and recalculate exposure during the trip.
 
-**Known limitation:** the recommendation uses a straight source-to-destination bearing and the journey start time. A production version should follow the actual route geometry and recompute sun exposure throughout the trip.
+</details>
 
 ---
 
-### 02 — TOKENS / ATTENTION / EVIDENCE
+### 02. BERT Fine-Tuning on SST-2
 
-**[BERT × SST-2 →](https://github.com/SauravSunish/AIpro)**  
+**[View repository →](https://github.com/SauravSunish/AIpro)**
+
 An academic sentiment-classification experiment that fine-tunes `bert-base-uncased` on SST-2 and provides a separate inference path for inspecting multi-head self-attention.
 
-#### What the pipeline actually does
+`Python` · `PyTorch` · `Transformers` · `Datasets` · `scikit-learn`
 
-1. Loads pinned revisions of the model and GLUE/SST-2 dataset.
-2. Tokenizes with truncation and dynamic batch padding.
-3. Fine-tunes with Hugging Face `Trainer`.
-4. Evaluates accuracy, precision, recall, and F1.
-5. Saves the model, tokenizer, metrics, state, and run metadata.
-6. Reloads the trained model for inference and exports attention heatmaps.
+**Key idea:** build a reproducible training workflow while treating attention plots as observations—not causal explanations.
 
-`Python` `PyTorch` `Transformers` `Datasets` `scikit-learn`
+<details>
+<summary><strong>How it works and what I can explain</strong></summary>
 
-**What I can discuss:** transfer learning, tokenization, padding, train/validation separation, deterministic seeds, evaluation metrics, fast smoke tests, and why attention is useful to inspect.
+<br/>
 
-**Known limitation:** attention weights show internal routing patterns; they are not proof that a token caused the prediction. The corrected pipeline should be rerun before presenting historical checkpoint metrics as final experimental results.
+The pipeline loads pinned model and dataset revisions, tokenizes with dynamic batch padding, fine-tunes with Hugging Face `Trainer`, evaluates accuracy/precision/recall/F1, and saves the model plus run metadata. A separate inference path reloads the model and exports attention heatmaps.
+
+I can discuss transfer learning, tokenization, padding, train/validation separation, deterministic seeds, evaluation metrics, smoke tests, and the limitations of attention visualization.
+
+**Limitation:** attention weights show internal routing patterns; they do not prove that a token caused a prediction. The corrected pipeline should be rerun before historical checkpoint metrics are presented as final results.
+
+</details>
 
 ---
 
-### CURRENT COORDINATES
+## Current Focus
 
 ```text
-comfortable with → PHP, MySQL, JavaScript, Python project workflows
-learning deeply  → NLP, model evaluation, explainability limitations
-working toward   → smaller claims, stronger evidence, better-tested software
+Comfortable with → PHP, MySQL, JavaScript, Python project workflows
+Learning deeply  → NLP, model evaluation, explainability limitations
+Working toward   → smaller claims, stronger evidence, better-tested software
 ```
 
-### HOW I APPROACH A PROJECT
-
-- I start with one concrete problem and make the mechanism visible.
-- I document both the implementation and its limits.
-- I prefer a working prototype I understand over a larger system I cannot defend.
-- If I do not know something, I treat that as the next question—not something to hide.
+> I prefer a working prototype I understand over a larger system I cannot defend.
 
 <p align="center">
-  <sub>Everything highlighted here links to code I can walk through.</sub>
+  <sub>Every highlighted project links to code I can walk through.</sub>
 </p>
