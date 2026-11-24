@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SauravSunish/SauravSunish/main/assets/systems-banner.png?v=2" alt="Saurav Sunish portfolio banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/SauravSunish/SauravSunish/main/assets/systems-banner.png" alt="Saurav Sunish portfolio banner" width="100%" />
 </p>
 
 <h1 align="center">Saurav Sunish</h1>
