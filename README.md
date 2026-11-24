@@ -69,11 +69,36 @@ I can discuss transfer learning, tokenization, padding, train/validation separat
 
 ---
 
+### 03. FedSight — Video-Investigation Research Prototype
+
+**[View repository and real-video examples →](https://github.com/SauravSunish/Fedsight)**
+
+A local, human-in-the-loop workbench that explores video evidence registration, sampled object detection, within-video tracking, cross-camera review, uncertain route reasoning, and evidence integrity.
+
+`Python` · `Streamlit` · `OpenCV` · `YOLO` · `SQLite` · `AES-GCM`
+
+**Key idea:** make computer-vision output reviewable and source-linked instead of presenting a detection, similarity score, or inferred route as a certain conclusion.
+
+<details>
+<summary><strong>What is real today—and what remains future work</strong></summary>
+
+<br/>
+
+The repository contains working prototype flows for local cases, encrypted asset storage, evidence hashing, sampled detections, tracklets, review screens, camera/replay inputs, audit records, and annotated snapshots. The README includes outputs produced from licensed CITIC-MTMC real-world video clips.
+
+I can explain the five main layers: evidence registration, bounded processing, source-linked review, experimental reasoning, and the live-camera/replay prototype. I can also discuss why human review, provenance, uncertainty, retention, and dataset licensing matter.
+
+**Limitation:** this is not a finished surveillance product. It has not been validated for identity recognition, production security, legal evidence handling, autonomous decisions, or broad real-world deployment. A main application would require a narrower use case, representative evaluation, privacy/legal review, access control, deployment architecture, and field testing.
+
+</details>
+
+---
+
 ## Current Focus
 
 ```text
 Comfortable with → PHP, MySQL, JavaScript, Python project workflows
-Learning deeply  → NLP, model evaluation, explainability limitations
+Learning deeply  → NLP, computer vision evaluation, explainability limitations
 Working toward   → smaller claims, stronger evidence, better-tested software
 ```
 
