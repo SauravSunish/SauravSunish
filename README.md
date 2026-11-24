@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/SauravSunish/SauravSunish/main/assets/systems-banner.png" alt="Saurav Sunish portfolio banner" width="100%" />
-</p>
+![Saurav Sunish portfolio banner](https://github.com/SauravSunish/SauravSunish/blob/main/assets/systems-banner.png?raw=true)
 
 <h1 align="center">Saurav Sunish</h1>
 
