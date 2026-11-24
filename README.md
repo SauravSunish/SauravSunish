@@ -1,4 +1,4 @@
-![Saurav Sunish portfolio banner](https://github.com/SauravSunish/SauravSunish/blob/main/assets/systems-banner.png?raw=true)
+![Saurav Sunish portfolio banner](https://raw.githubusercontent.com/SauravSunish/SauravSunish/main/assets/systems-banner.jpg)
 
 <h1 align="center">Saurav Sunish</h1>
 
