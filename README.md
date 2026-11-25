@@ -46,6 +46,10 @@ I can explain the five main layers: evidence registration, bounded processing, s
 
 **[View repository →](https://github.com/SauravSunish/mini-project-sonajafy)**
 
+[![SmartBus sunlight-aware seat selection screen](https://raw.githubusercontent.com/SauravSunish/mini-project-sonajafy/main/assets/img/seat-selection.png)](https://github.com/SauravSunish/mini-project-sonajafy)
+
+<sub>Project screenshot · route-bearing and solar-position logic recommending the lower-exposure side</sub>
+
 A PHP/MySQL application with seat inventory, booking flow, QR e-tickets, a route-progress screen, and an experimental sunlight-based seat recommendation.
 
 `PHP` · `MySQL` · `JavaScript` · `Bootstrap` · `SunCalc`
@@ -76,6 +80,10 @@ I can walk through prepared statements, PHP-to-JavaScript JSON, booked-seat stat
 ### 03. BERT Fine-Tuning on SST-2
 
 **[View repository →](https://github.com/SauravSunish/AIpro)**
+
+[![BERT SST-2 corrected experiment pipeline](https://raw.githubusercontent.com/SauravSunish/AIpro/main/docs/screenshots/pipeline-overview.svg)](https://github.com/SauravSunish/AIpro)
+
+<sub>Project architecture visual · pinned inputs, preprocessing, fine-tuning, evaluation artifacts and offline visualizations</sub>
 
 An academic sentiment-classification experiment that fine-tunes `bert-base-uncased` on SST-2 and provides a separate inference path for inspecting multi-head self-attention.
 
