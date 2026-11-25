@@ -4,16 +4,45 @@
 
 <p align="center">
   <strong>Project Portfolio</strong><br/>
-  Web systems · Applied machine learning · Explainable prototypes
+  Computer vision · Applied ML · Web systems · Explainable prototypes
 </p>
 
 ---
 
-I build academic and personal projects to understand how an idea moves from **logic → interface → working prototype**. I document what works, how it works, and where the limitations are.
+I build human-reviewable prototypes to understand how an idea moves from **logic → interface → working system**. I document what works, how it works, and where the limitations are.
 
 ## Featured Projects
 
-### 01. SmartBus — Bus Booking Prototype
+### 01. FedSight — Video-Investigation Research Prototype
+
+**[View repository and six real-video use cases →](https://github.com/SauravSunish/Fedsight)**
+
+[![FedSight real-world multi-camera detection output](https://raw.githubusercontent.com/SauravSunish/Fedsight/main/docs/screenshots/citic-multicamera-detections.jpg)](https://github.com/SauravSunish/Fedsight#real-video-pipeline-examples)
+
+<sub>Real CITIC-MTMC dataset frames · YOLO11n model output · not identity recognition or benchmark accuracy</sub>
+
+A local, human-in-the-loop workbench that explores video evidence registration, sampled object detection, within-video tracking, cross-camera review, uncertain route reasoning, and evidence integrity.
+
+`Python` · `Streamlit` · `OpenCV` · `YOLO` · `SQLite` · `AES-GCM`
+
+**Key idea:** make computer-vision output reviewable and source-linked instead of presenting a detection, similarity score, or inferred route as a certain conclusion.
+
+<details>
+<summary><strong>What is real today—and what remains future work</strong></summary>
+
+<br/>
+
+The repository contains working prototype flows for local cases, encrypted asset storage, evidence hashing, sampled detections, tracklets, review screens, camera/replay inputs, audit records, and annotated snapshots. The README includes outputs produced from licensed CITIC-MTMC real-world video clips.
+
+I can explain the five main layers: evidence registration, bounded processing, source-linked review, experimental reasoning, and the live-camera/replay prototype. I can also discuss why human review, provenance, uncertainty, retention, and dataset licensing matter.
+
+**Limitation:** this is not a finished surveillance product. It has not been validated for identity recognition, production security, legal evidence handling, autonomous decisions, or broad real-world deployment. A main application would require a narrower use case, representative evaluation, privacy/legal review, access control, deployment architecture, and field testing.
+
+</details>
+
+---
+
+### 02. SmartBus — Bus Booking Prototype
 
 **[View repository →](https://github.com/SauravSunish/mini-project-sonajafy)**
 
@@ -44,7 +73,7 @@ I can walk through prepared statements, PHP-to-JavaScript JSON, booked-seat stat
 
 ---
 
-### 02. BERT Fine-Tuning on SST-2
+### 03. BERT Fine-Tuning on SST-2
 
 **[View repository →](https://github.com/SauravSunish/AIpro)**
 
@@ -69,35 +98,10 @@ I can discuss transfer learning, tokenization, padding, train/validation separat
 
 ---
 
-### 03. FedSight — Video-Investigation Research Prototype
-
-**[View repository and real-video examples →](https://github.com/SauravSunish/Fedsight)**
-
-A local, human-in-the-loop workbench that explores video evidence registration, sampled object detection, within-video tracking, cross-camera review, uncertain route reasoning, and evidence integrity.
-
-`Python` · `Streamlit` · `OpenCV` · `YOLO` · `SQLite` · `AES-GCM`
-
-**Key idea:** make computer-vision output reviewable and source-linked instead of presenting a detection, similarity score, or inferred route as a certain conclusion.
-
-<details>
-<summary><strong>What is real today—and what remains future work</strong></summary>
-
-<br/>
-
-The repository contains working prototype flows for local cases, encrypted asset storage, evidence hashing, sampled detections, tracklets, review screens, camera/replay inputs, audit records, and annotated snapshots. The README includes outputs produced from licensed CITIC-MTMC real-world video clips.
-
-I can explain the five main layers: evidence registration, bounded processing, source-linked review, experimental reasoning, and the live-camera/replay prototype. I can also discuss why human review, provenance, uncertainty, retention, and dataset licensing matter.
-
-**Limitation:** this is not a finished surveillance product. It has not been validated for identity recognition, production security, legal evidence handling, autonomous decisions, or broad real-world deployment. A main application would require a narrower use case, representative evaluation, privacy/legal review, access control, deployment architecture, and field testing.
-
-</details>
-
----
-
 ## Current Focus
 
 ```text
-Comfortable with → PHP, MySQL, JavaScript, Python project workflows
+Comfortable with → Python project workflows, PHP, MySQL, JavaScript
 Learning deeply  → NLP, computer vision evaluation, explainability limitations
 Working toward   → smaller claims, stronger evidence, better-tested software
 ```
